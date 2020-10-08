@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+    <head>
+        <meta charset="UTF-8" />
+        <script>
+            var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') ||
+                CSS.supports('top: constant(a)'))
+            document.write(
+                '<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' +
+                (coverSupport ? ', viewport-fit=cover' : '') + '" />')
+        </script>
+        <title>View</title>
+        <style>
+            * {
+                -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+                -webkit-tap-highlight-color: transparent;
+            }
+
+            input[type="search"]::-webkit-search-cancel-button {
+                display: none;
+            }
+        </style>
+        <script>
+            var __wxConfig = {"debug":false,"appname":"木各习惯","entryPagePath":"pages/index/index.html","page":{"pages/index/index.html":{"window":{"usingComponents":{}}},"pages/index/guide.html":{"window":{"usingComponents":{"uni-number-box":"/components/uni-number-box/uni-number-box"}}},"pages/tabBar/habitList/habitList.html":{"window":{"usingComponents":{"cu-custom":"/colorui/components/cu-custom"}}},"pages/tabBar/chat/chat.html":{"window":{"usingComponents":{"cu-custom":"/colorui/components/cu-custom"}}},"pages/tabBar/vip/vip.html":{"window":{"usingComponents":{}}},"pages/tabBar/vip/partnerinfo.html":{"window":{"usingComponents":{"cu-custom":"/colorui/components/cu-custom"}}},"pages/tabBar/habitList/intochart1.html":{"window":{"usingComponents":{"cu-custom":"/colorui/components/cu-custom","uni-calendar":"/components/uni-calendar/uni-calendar"}}},"pages/tabBar/vip/about.html":{"window":{"usingComponents":{"cu-custom":"/colorui/components/cu-custom"}}},"pages/tabBar/vip/addword.html":{"window":{"usingComponents":{"cu-custom":"/colorui/components/cu-custom"}}},"pages/tabBar/vip/addwordinfo.html":{"window":{"usingComponents":{}}}},"global":{"window":{"navigationStyle":"custom"}},"tabBar":{"color":"#7A7E83","selectedColor":"#007AFF","backgroundColor":"#FFFFFF","borderStyle":"black","list":[{"pagePath":"pages/tabBar/habitList/habitList.html","iconPath":"static/xizi_img/phh.png","selectedIconPath":"static/xizi_img/phc.png","text":"习惯列表"},{"pagePath":"pages/tabBar/chat/chat.html","iconPath":"static/xizi_img/xxh.png","selectedIconPath":"static/xizi_img/xxc.png","text":"聊天打卡"},{"pagePath":"pages/tabBar/vip/vip.html","iconPath":"static/xizi_img/grzxh.png","selectedIconPath":"static/xizi_img/grzxc.png","text":"个人中心"}],"position":"bottom"},"networkTimeout":{"request":3000,"connectSocket":60000,"uploadFile":60000,"downloadFile":60000},"platform":"devtools","pages":["pages/index/index","pages/index/guide","pages/tabBar/habitList/habitList","pages/tabBar/chat/chat","pages/tabBar/vip/vip","pages/tabBar/vip/partnerinfo","pages/tabBar/habitList/intochart1","pages/tabBar/vip/about","pages/tabBar/vip/addword","pages/tabBar/vip/addwordinfo"],"nvueCompiler":"weex","renderer":"auto","splashscreen":{"alwaysShowBeforeRender":true,"autoclose":false},"compilerVersion":"2.3.9","usingComponents":{"cu-custom":"/colorui/components/cu-custom"}}
+        </script>
+        <script>
+            var __id__ = '';
+            window.__dispatchGenerateFunc__ = function(page) {
+                __id__ = page;
+                document.title = page;
+                // window.history.pushState('', '', page);
+                var wxss = page.replace('.html', '.wxss')
+                if (
+                    typeof __wxAppCode__ !== 'undefined' &&
+                    __wxAppCode__.hasOwnProperty(wxss)
+                ) {
+                    var setCssToHead = __wxAppCode__[wxss]
+                    typeof setCssToHead === 'function' && setCssToHead()
+                    document.dispatchEvent(new CustomEvent("generateFuncReady", {
+                        detail: {
+                            generateFunc: $gwx(page.replace('.html', '.wxml'))
+                        }
+                    }));
+                } else {
+                    plus.webview.currentWebview().setJsFile('_www/' + page.replace('.html', '.js'));
+                }
+            };
+        </script>
+        <script src="__uniappes6.js"></script>
+        <script src="uniapp://ready"></script>
+    </head>
+
+    <body>
+        <div></div>
+    </body>
+
+</html>

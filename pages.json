@@ -1,0 +1,84 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+
+			}
+		},
+		{
+			"path": "pages/index/guide",
+			"style": {
+
+			}
+		},
+		{
+			"path": "pages/tabBar/habitList/habitList",
+			"style": {
+			}
+		},
+		{
+			"path": "pages/tabBar/chat/chat",
+			"style": {
+
+			}
+		},
+		{
+			"path": "pages/tabBar/vip/vip",
+			"style": {
+
+			}
+		},
+		{
+			"path": "pages/tabBar/vip/partnerinfo",
+			"style": {
+
+			}
+		},
+		{
+			"path": "pages/tabBar/habitList/intochart1",
+			"style": {}
+		}
+	    ,{
+            "path" : "pages/tabBar/vip/about",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/tabBar/vip/addword",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/tabBar/vip/addwordinfo",
+            "style" : {}
+        }
+    ],
+	"globalStyle": {
+		"navigationStyle": "custom"
+	},
+	"tabBar": {
+		"color": "#7A7E83", //tab 上的文字默认颜色
+		"selectedColor": "#007AFF", //tab 上的文字选中时的颜色
+		"borderStyle": "black", //tabbar 上边框的颜色，仅支持 black/white
+		"backgroundColor": "#FFFFFF", //tab 的背景色
+		"list": [{
+				"pagePath": "pages/tabBar/habitList/habitList",
+				"iconPath": "static/xizi_img/phh.png",
+				"selectedIconPath": "static/xizi_img/phc.png",
+				"text": "习惯列表"
+			},
+			{
+				"pagePath": "pages/tabBar/chat/chat",
+				"iconPath": "static/xizi_img/xxh.png",
+				"selectedIconPath": "static/xizi_img/xxc.png",
+				// "selectedIconPath": "static/xizi_img/middleadd.png",
+				"text": "聊天打卡"
+			},
+			{
+				"pagePath": "pages/tabBar/vip/vip",
+				"iconPath": "static/xizi_img/grzxh.png",
+				"selectedIconPath": "static/xizi_img/grzxc.png",
+				"text": "个人中心"
+			}
+		]
+	}
+}

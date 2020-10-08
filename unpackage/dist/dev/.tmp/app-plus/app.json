@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index/guide",
+    "pages/tabBar/habitList/habitList",
+    "pages/tabBar/chat/chat",
+    "pages/tabBar/vip/vip",
+    "pages/tabBar/vip/partnerinfo",
+    "pages/tabBar/habitList/intochart1",
+    "pages/tabBar/vip/about",
+    "pages/tabBar/vip/addword",
+    "pages/tabBar/vip/addwordinfo"
+  ],
+  "window": {
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#007AFF",
+    "borderStyle": "black",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/tabBar/habitList/habitList",
+        "iconPath": "static/xizi_img/phh.png",
+        "selectedIconPath": "static/xizi_img/phc.png",
+        "text": "习惯列表"
+      },
+      {
+        "pagePath": "pages/tabBar/chat/chat",
+        "iconPath": "static/xizi_img/xxh.png",
+        "selectedIconPath": "static/xizi_img/xxc.png",
+        "text": "聊天打卡"
+      },
+      {
+        "pagePath": "pages/tabBar/vip/vip",
+        "iconPath": "static/xizi_img/grzxh.png",
+        "selectedIconPath": "static/xizi_img/grzxc.png",
+        "text": "个人中心"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 3000
+  },
+  "nvueCompiler": "weex",
+  "renderer": "auto",
+  "splashscreen": {
+    "alwaysShowBeforeRender": true,
+    "autoclose": false
+  },
+  "appname": "木各习惯",
+  "compilerVersion": "2.3.9",
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  }
+}
